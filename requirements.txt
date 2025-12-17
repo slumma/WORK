@@ -1,0 +1,24 @@
+# Requirements for Excel Pivot Tables and Charts with Python
+# Install all: pip install -r requirements.txt
+
+# Core data manipulation
+pandas>=1.5.0
+
+# Excel library - read Excel files (required by pandas for Excel operations)
+openpyxl>=3.0.0
+
+# Approach 1: XlsxWriter - Write-only Excel library with great chart support
+xlsxwriter>=3.0.0
+
+# Approach 3: win32com - Windows COM automation (Windows + Excel only)
+# Note: pywin32 only works on Windows with Excel installed
+# After installing, you may need to run: python -m win32com.client.makepy.py
+pywin32>=300; sys_platform == 'win32'
+
+# Optional: PySpark for big data processing
+# Uncomment if you need PySpark integration
+# pyspark>=3.3.0
+
+# Optional: Additional useful libraries
+# numpy>=1.24.0  # Already installed as pandas dependency
+# python-dateutil>=2.8.0  # Already installed as pandas dependency
