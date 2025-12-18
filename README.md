@@ -30,21 +30,6 @@ Or install all dependencies:
 pip install -r requirements.txt
 ```
 
-### Running the Examples
-
-Each file can be run independently:
-
-```bash
-# Approach 1: XlsxWriter
-python approach1_xlsxwriter.py
-
-# Approach 2: openpyxl
-python approach2_openpyxl.py
-
-# Approach 3: win32com (Windows only, requires Excel)
-python approach3_win32com.py
-```
-
 
 ---
 
@@ -112,4 +97,5 @@ pivot = pd.pivot_table(
     aggfunc='sum'
 )
 ```
+
 
